@@ -1,0 +1,366 @@
+.container{
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+
+
+    .done{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        position: absolute;
+        left: 10px;
+        
+
+         h1{
+            font-size: 100px;
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+            span{
+                display: flex;
+                gap: 20px;
+                flex-direction: row;
+                -webkit-text-stroke: 2px aqua;
+                color: transparent;
+                
+                
+                
+
+                .emoji{
+                    font-size: 90px;
+                    animation: shake 1s  infinite;
+                    
+                   
+                
+                    @keyframes shake {
+                        0%, 100% {
+                            transform: rotate(-10deg);
+                          }
+                          50% {
+                            transform: rotate(10deg);
+                          }
+                        
+                    }
+                
+                }
+              }
+        }  
+        h2{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            font-size: 40px;
+            align-items: center;
+            margin-top: -40px;
+
+            span{
+                color: rgb(32, 206, 64);
+            }
+            span::first-letter {
+                color:goldenrod; 
+                font-size: 100px;
+        } 
+    }
+    .dslash{
+        display: flex;
+        font-size: 50px;
+        width: 50vw;
+        height: 20vh;
+        gap: 20px;
+        color: rgb(230, 204, 204);
+        align-items: center;
+        margin-left: 200px;
+        position: relative;
+
+        span{
+            opacity: 1;
+            color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: named 4s infinite;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+       /*     @keyframes named {
+                0%,100%{
+                    left: -1000000px;
+                    opacity: 0;
+                    background-color: rgb(4, 12, 12);
+                }
+                20%{
+                    left: 0;
+                    opacity: 0.4;
+                }
+                50%{
+                    opacity: 1;
+                    left:100px;
+                    opacity: 1;
+                    color: whitesmoke;
+                   
+                }
+                90%{
+                    left: -200px;
+                    opacity: 0;
+                   
+                }
+            }*/
+
+            div{
+                color: gold;
+                animation:blin 1s infinite ;
+                font-size: 70px;
+
+                @keyframes blin {
+                    0%,100%{
+                            opacity: 0;
+                    }
+                    50%{
+                        opacity: 1;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}
+    .dtwo{
+        display: flex;
+        justify-content:flex-start;
+        align-items:center;
+        flex: 1;
+        margin-right: 20px;
+        position: absolute;
+        right: 0;
+
+        img{
+            display: flex;
+            margin-right: 40px;
+            background-color:rgba(0,0,0,0);
+          //  animation: big 1s infinite;
+
+        /*    @keyframes big {
+                0%,100%{
+                    scale: 0.9;
+                }
+                50%{
+                    scale: 1;
+                }
+                
+            }*/
+        }
+        .shine{
+            width: 500px;
+            height: 10px;
+            background-color: rgba(240, 248, 255, 0.208);
+            position: absolute;
+            top: 0;
+            right: 90px;
+            animation: shin 2s infinite;
+            border-top: 3px solid white;
+            z-index: -1;
+            border-radius: 50px;
+
+            @keyframes shin {
+                0%,100%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 1;
+                    height: 700px;
+                }
+                
+            }
+        }
+
+    }
+   
+.media,.media1,.media2{
+    position: absolute;
+    background-color: rgb(206, 202, 202);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.media{
+    top: 150px;
+    left: 100px;
+    color: red;
+    background-color: rgb(240, 155, 229);
+
+}
+.media:hover{
+    color:rgb(21, 14, 14);
+    scale: 1.2;
+    
+}
+.media1{
+    top: 250px;
+    left: 100px;
+    color: black;
+    background-color: rgb(240, 155, 229);
+
+}
+.media1:hover{
+    color:rgb(78, 27, 144);
+    scale: 1.2;
+    
+}
+.media2{
+    top: 350px;
+    left: 100px;
+    color: rgb(44, 11, 229);
+    background-color: rgb(240, 155, 229);
+
+}
+.media2:hover{
+    color:rgb(19, 18, 21);
+    scale: 1.2;
+    
+}
+}
+@media only screen and (max-width: 768px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-size: medium;
+
+        .done{
+            width:100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+
+            h1{
+                
+                gap:10px;
+            }
+            h2{
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 10px;
+                font-size: 40px;
+                align-items: center;
+    
+                span{
+                    color: rgb(212, 220, 213);
+                }
+                span::first-letter {
+                    color:goldenrod; 
+                    font-size: 100px;
+            } 
+        }
+        .dslash{
+            display: flex;
+            font-size: 60px;
+            width: 100vw;
+            height: 50vh;
+            gap: 10px;
+            align-items: center;
+            margin-left: -7px;
+            position: relative;
+    
+            span{
+                opacity: 1;
+                color: azure;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+           /*     @keyframes named {
+                    0%,100%{
+                        left: -1000000px;
+                        opacity: 0;
+                        background-color: rgb(4, 12, 12);
+                    }
+                    20%{
+                        left: 0;
+                        opacity: 0.4;
+                    }
+                    50%{
+                        opacity: 1;
+                        left:100px;
+                        opacity: 1;
+                        color: whitesmoke;
+                       
+                    }
+                    90%{
+                        left: -200px;
+                        opacity: 0;
+                       
+                    }
+                }*/
+    
+                div{
+                    
+                    font-size: 90px;
+    
+                }
+            }
+    
+        }
+            
+        }
+        .dtwo{
+            
+            img{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                top: 200px;
+                right:50px;
+
+            }
+            .shine{
+                width: 200px;
+                top: 180px;
+                right: 140px;
+    
+                @keyframes shin {
+                    0%,100%{
+                        opacity: 0;
+                    }
+                    50%{
+                        opacity: 1;
+                        height: 350px;
+                    }
+                    
+                }
+            }
+        }
+        .media{
+            top: 20px;
+            left: 10;
+            
+        
+        }
+        .media1{
+            top: 20px;
+            left: 200px;
+        
+        }
+        
+        .media2{
+            top: 20px;
+            left: 300px;
+        }
+    }
+    
+    
+  }

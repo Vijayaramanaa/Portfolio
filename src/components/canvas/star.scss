@@ -1,0 +1,81 @@
+.sdiv{
+    width:100vw;
+    height:300vh;
+.sta{
+    width: 1200px;
+    margin: auto;
+    height:300vh;
+   
+.title {
+    font-size: 10em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: #f3bc3c;
+  }
+  
+  h3 {
+    padding-top: 0.25em;
+  }
+  
+  .vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    padding: 2em 3em !important;
+ 
+  }
+  
+  .date {
+    color: rgb(137, 241, 127);
+  }
+ 
+  
+  #description {
+    margin: 1.5em 0 2em 0;
+  }
+  
+  .button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    color: rgb(227, 14, 14);
+  }
+  
+  .workButton {
+    background-color: #06d6a0;
+  }
+  
+  .workButton:hover {
+    background-color: #0ac593;
+  }
+  
+  .schoolButton {
+    background-color: #f9c74f;
+  }
+  
+  .schoolButton:hover {
+    background-color: #f3bc3c;
+  }
+}
+.sta::-webkit-scrollbar{
+  display: none;
+}
+}
+@media only screen and (max-width: 768px) {
+
+  .sdiv{
+    width:100vw;
+    height:100vh;
+.sta{
+    width: 100vw;
+    margin: auto;
+    height:200vh;
+    .vertical-timeline-element-date {
+      width: 1000vw;
+      display: block !important;
+      float: none !important;
+      color: rgb(44, 44, 44);
+      margin-top: 1em;
+    }
+    
+  }
+}
+  }
